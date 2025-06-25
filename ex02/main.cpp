@@ -17,5 +17,11 @@ int main()
 	for (unsigned int i = 0; i < doubleArray.size(); ++i)
 		std::cout << "doubleArray[" << i << "] = " << doubleArray[i] << std::endl;
 
+	try {
+		intArray[10] = 100; // This should throw an exception
+	} catch (const std::exception &e) {
+		std::cerr << "Exception: " << e.what() << std::endl;
+	}
+
 	return 0;
 }
