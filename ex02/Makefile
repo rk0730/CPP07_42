@@ -1,6 +1,6 @@
 CXX := c++
 CXXFLAGS := -std=c++98 -Wall -Wextra -Werror
-CPPFLAGS := -MMD -MP
+CPPFLAGS := -MMD -MP -I.
 
 SRCDIR := .
 SRCS += $(SRCDIR)/main.cpp

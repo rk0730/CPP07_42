@@ -1,6 +1,8 @@
 #ifndef ARRAY_HPP
 #define ARRAY_HPP
 
+#include <cstdlib> // for rand(), srand()
+
 template <typename T> class Array
 {
 public:
